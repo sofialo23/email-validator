@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-mail validator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Send New Mail</h2>
+        </div>
+        <div class="box">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Destination email e.g. person@company.com">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="email subject">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="8" placeholder="email message"></textarea>
+            <div class="buttons">
+                <button id="send-btn"><i class="fa-regular fa-paper-plane"></i> Send</button>
+                <button id="reset-btn"><i class="fa-regular fa-trash-can"></i> Reset</button>
+            </div>
+        </div> <!-- end of box class-->
+    </div> <!-- end of container class-->
+</body>
+
+<script src="https://kit.fontawesome.com/7067867139.js" crossorigin="anonymous"></script>
+</html>
