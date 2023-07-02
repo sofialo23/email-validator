@@ -17,7 +17,7 @@ body{
     width: 500px;
     margin: auto;
 }
-.box{
+.form-box{
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -29,16 +29,18 @@ body{
     border-radius: 5px;
     font-size: 0.8rem;
 }
-
-.box input, textarea{
+.field{
+    width: 100%;
+}
+.form-box input, textarea{
     width: 100%;
     border-radius: 5px;
     border: 1px solid #c3cedd;
 }
-.box label{
+.form-box label{
     font-weight:600;
 }
-.box input{
+.form-box input{
     height: 30px;
 }
 
@@ -56,10 +58,36 @@ body{
     border-radius: 5px;
 }
 #send-btn{
-    background-color: #ed8db4;
+    background-color: #d5236d;
     color: #fff;
+    opacity: 50%;
+}
+
+#send-btn .active{
+    opacity: 100%;
 }
 #reset-btn{
     background-color: #1b242f;
     color: #fff;
+}
+
+.error-message{
+    font-weight: 600;
+    color: red;
+}
+
+#spinner{
+    align-self: center;
+}
+
+.succ-message{
+    background-color: greenyellow;
+    align-self: center;
+    font-size: 1rem;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
 }
